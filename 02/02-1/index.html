@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Vue Sample</title>
+</head>
+<body>
+<!-- div 태그 추가 -->
+<div id="app">
+    {{ message }}
+</div>
+<!-- 뷰 라이브러리 로딩 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<!-- 뷰로 Hello Vue.js! 출력 -->
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue.js!'
+        }
+    });
+</script>
+<!-- 이 실습 예제에서 중요한 건 이렇게 HTML 문서에서 코드 몇 줄로 뷰를 바로 실행할 수 있다는 사실. -->
+<!-- 뷰가 제이쿼리(jQuery)보다 적용하기 쉽다 라는 말이 나오기도 함. -->
+</body>
+</html>
